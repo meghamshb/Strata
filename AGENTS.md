@@ -38,7 +38,7 @@ Correctness, containment, recovery, and auditability take precedence over featur
 
 - Strata consumes NautilusTrader directly as exact pinned native Rust Git dependencies. It is not
   an external wrapper, parallel engine, generic facade, or HTTP layer over NautilusTrader.
-- `origin` is `meghamshb/StrataMigrate`; `upstream` is `nautechsystems/nautilus_trader`.
+- `origin` is `meghamshb/Strata`; `upstream` is `nautechsystems/nautilus_trader`.
 - Pin engine imports in the root Cargo manifest to an exact reviewed release commit and record its
   release tag in the manifest comment. Never track `develop`, `nightly`, a wildcard dependency, or
   an unpinned Git revision.
