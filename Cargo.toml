@@ -12,7 +12,7 @@ version = "0.1.0"
 edition = "2024"
 rust-version = "1.98.1"
 license = "LGPL-3.0-only"
-repository = "https://github.com/meghamshb/Strata"
+repository = "https://github.com/meghamshb/StrataMigrate"
 
 [workspace.dependencies]
 # NautilusTrader v2.0.0rc5: 1b0a49d2792a9432a3aca3fcb617ce7a630d905e
