@@ -1,0 +1,22 @@
+[package]
+name = "strata-runtime"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Paper-only process composition and lifecycle for Strata"
+
+[lints]
+workspace = true
+
+[features]
+default = ["paper-only"]
+paper-only = []
+
+[dependencies]
+nautilus-live.workspace = true
+nautilus-system.workspace = true
+strata-futu.workspace = true
+strata-hk.workspace = true
+strata-reconcile.workspace = true

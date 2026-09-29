@@ -1,0 +1,17 @@
+[package]
+name = "strata-reconcile"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Broker reconciliation and trading locks for Strata"
+
+[lints]
+workspace = true
+
+[dependencies]
+nautilus-event-store.workspace = true
+nautilus-execution.workspace = true
+nautilus-model.workspace = true
+nautilus-portfolio.workspace = true

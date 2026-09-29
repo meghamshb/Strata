@@ -1,0 +1,39 @@
+[workspace]
+resolver = "2"
+members = [
+  "strata/futu",
+  "strata/hk",
+  "strata/reconcile",
+  "strata/runtime",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.98.1"
+license = "LGPL-3.0-only"
+repository = "https://github.com/meghamshb/Strata"
+
+[workspace.dependencies]
+# NautilusTrader v2.0.0rc5: 1b0a49d2792a9432a3aca3fcb617ce7a630d905e
+nautilus-common = { git = "https://github.com/nautechsystems/nautilus_trader.git", rev = "1b0a49d2792a9432a3aca3fcb617ce7a630d905e", features = ["high-precision"] }
+nautilus-event-store = { git = "https://github.com/nautechsystems/nautilus_trader.git", rev = "1b0a49d2792a9432a3aca3fcb617ce7a630d905e" }
+nautilus-execution = { git = "https://github.com/nautechsystems/nautilus_trader.git", rev = "1b0a49d2792a9432a3aca3fcb617ce7a630d905e", features = ["high-precision"] }
+nautilus-live = { git = "https://github.com/nautechsystems/nautilus_trader.git", rev = "1b0a49d2792a9432a3aca3fcb617ce7a630d905e" }
+nautilus-model = { git = "https://github.com/nautechsystems/nautilus_trader.git", rev = "1b0a49d2792a9432a3aca3fcb617ce7a630d905e", features = ["high-precision"] }
+nautilus-portfolio = { git = "https://github.com/nautechsystems/nautilus_trader.git", rev = "1b0a49d2792a9432a3aca3fcb617ce7a630d905e" }
+nautilus-system = { git = "https://github.com/nautechsystems/nautilus_trader.git", rev = "1b0a49d2792a9432a3aca3fcb617ce7a630d905e" }
+
+strata-futu = { path = "strata/futu" }
+strata-hk = { path = "strata/hk" }
+strata-reconcile = { path = "strata/reconcile" }
+
+[workspace.lints.rust]
+unsafe_code = "deny"
+unsafe_op_in_unsafe_fn = "deny"
+nonstandard_style = "deny"
+unreachable_pub = "deny"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }

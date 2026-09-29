@@ -1,0 +1,15 @@
+[package]
+name = "strata-hk"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Hong Kong market rules and reference data for Strata"
+
+[lints]
+workspace = true
+
+[dependencies]
+nautilus-common.workspace = true
+nautilus-model.workspace = true

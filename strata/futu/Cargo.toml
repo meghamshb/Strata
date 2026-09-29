@@ -1,0 +1,18 @@
+[package]
+name = "strata-futu"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Native Futu OpenD adapter for Strata"
+
+[lints]
+workspace = true
+
+[dependencies]
+nautilus-common.workspace = true
+nautilus-execution.workspace = true
+nautilus-live.workspace = true
+nautilus-model.workspace = true
+strata-hk.workspace = true
