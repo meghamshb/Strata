@@ -1,5 +1,5 @@
 # Strata
 
-Rust-native Hong Kong quantitative trading platform built directly on pinned NautilusTrader source.
+Rust-native Hong Kong quantitative trading platform 
 
 Current status: research, deterministic simulation, and paper trading only.
